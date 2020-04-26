@@ -33,6 +33,12 @@ body {
   -moz-appearance: none;
   -webkit-appearance: none;
 }
+
+.container {
+  perspective: 1000px;
+  margin-bottom: 30px;
+}
+
 .row {
   display: flex;
 }
@@ -71,4 +77,26 @@ body {
 .showcase .seat:not(.occupied):hover {
   cursor: default;
   transform: scale(1);
+}
+
+.showcase {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  list-style-type: none;
+  color: #777;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 10px;
+}
+
+.showcase li small {
+  margin-left: 2px;
 }
